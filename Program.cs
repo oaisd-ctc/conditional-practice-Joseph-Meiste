@@ -1,26 +1,77 @@
 
+using System;
+using System.Globalization;
+
 public class Program
 {
     public static void Main(string[] args)
     {
-        FahrenheitToCelsius(68); // Test FahrenheitToCelsius Function with a random value
-
-        // Test your functions by calling them below:
-        // CheckForPositiveNegativeZero(-1); // This should output: "Your number is negative"
-        // CheckForPositiveNegativeZero(0); // This should output: "Your number is zero"
-        // CheckForPositiveNegativeZero(1); // This should output: "Your number is positive"
-        // ...
-        // ...
-        // DisplayDayOfWeek(0); // This should output: "Thursday"
-
+        CheckForPositiveNegativeZero();
+        FindMinimum();
+        FindMaximum();
     }
 
-    public static void FahrenheitToCelsius(double fahrenheit)
+    public static void CheckForPositiveNegativeZero()
     {
-        double celsiusDegree = (fahrenheit - 32) * 5/9; 
-        Console.WriteLine($"{fahrenheit} degrees Fahrenheit is {celsiusDegree} degrees Celsius.");
+        int num = 0;
+
+        if (num > 0)
+        {
+            Console.WriteLine("Your Number is Positive");
+        }
+        else if (num < 0)
+        {
+            Console.WriteLine("Your Number is Negative");
+        }
+        else
+        {
+            Console.WriteLine("Your Number is zero");
+        }
+
     }
 
-    // Define your functions below:
+    public static void FindMinimum()
+    {
+        int num1 = 2;
+        int num2 = 3;
+        int num3 = 1;
 
+        if (num1 < num2 && num1 < num3)
+        {
+            Console.WriteLine("The Minimum value is " + num1);
+        }
+        else if (num2 < num3 && num2 < num1)
+        {
+            Console.WriteLine("The Minimum value is " + num2);
+        }
+        else
+        {
+            Console.WriteLine("The Minimum value is " + num3);
+        }
+    }
+
+    public static void FindMaximum()
+    {
+        int num1 = 2;
+        int num2 = 3;
+        int num3 = 1;
+
+        if (num1 > num2 && num1 > num3)
+        {
+            Console.WriteLine("The Maximum value is " + num1);
+        }
+        else if (num2 > num3 && num2 > num1)
+        {
+            Console.WriteLine("The Maximum value is " + num2);
+        }
+        else
+        {
+            Console.WriteLine("The Maximum value is " + num3);
+        }
+    }
+
+    public static void IsDivisibleBy5();
+{
+
+}
 }
